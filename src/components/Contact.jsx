@@ -23,7 +23,13 @@ function Contact() {
   };
   const submit= async(e)=>{
     try{
-      
+      const formResponse = await fetch('https://formspree.io/f/xeqyabvd', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    });
 
 
       let {name,companyName,email,message}=formData
