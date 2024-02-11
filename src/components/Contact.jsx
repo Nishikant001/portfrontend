@@ -3,7 +3,7 @@ import './contact.css'
 import { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// const register=''
+const register='https://backendwork-nfm7.onrender.com'
 
 function Contact() {
   useEffect(()=>{
@@ -33,7 +33,7 @@ function Contact() {
 
 
       let {name,companyName,email,message}=formData
-      let result=await fetch('https://backendwork-nfm7.onrender.com/api/portfolio/contact',{
+      let result=await fetch(`${register}/api/portfolio/contact`,{
         method:'post',
         body:JSON.stringify({name,companyName,email,message}),
         headers:{
