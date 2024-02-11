@@ -27,7 +27,7 @@ function Contact() {
 
     // console.log(formData)
     // alert(`Press "Ok" to confirm`)
-    let result=await fetch('https://bakend-6kqt.onrender.com/api/portfolio/contact',{
+    let result=await fetch('https://backendwork-nfm7.onrender.com/api/portfolio/contact',{
       method:'post',
       body:JSON.stringify({name,companyName,email,message}),
       headers:{
