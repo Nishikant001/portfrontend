@@ -29,7 +29,7 @@ function Contact() {
 
       let {name,companyName,email,message}=formData
       let result=await fetch(`${register}/api/portfolio/contact`,{
-        method:'post',
+        method:'POST',
         body:JSON.stringify({name,companyName,email,message}),
         headers:{
           'Content-Type':'application/json',
@@ -61,7 +61,7 @@ function Contact() {
       <h6 className='g1'>Get In Touch</h6>
       <h3 className='g2'>Contact Me</h3>
       <p className='g3'></p>
-      <form onSubmit={submit} data-aos="fade-up" >
+      <form onSubmit={submit} data-aos="fade-up" action='https://formspree.io/f/xeqyabvd' method='POST'>
        
         <input type="text" name="name" id="g4" placeholder=' Your Name'  value={formData.name}
           onChange={handleChange} required/>
