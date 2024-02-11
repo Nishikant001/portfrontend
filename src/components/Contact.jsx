@@ -27,7 +27,7 @@ function Contact() {
 
     // console.log(formData)
     // alert(`Press "Ok" to confirm`)
-    let result=await fetch('http://localhost:5000/api/portfolio/contact',{
+    let result=await fetch('https://portfoliobackend6372.onrender.com/api/portfolio/contact',{
       method:'post',
       body:JSON.stringify({name,companyName,email,message}),
       headers:{
