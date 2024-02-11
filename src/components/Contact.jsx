@@ -22,21 +22,36 @@ function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   const submit= async(e)=>{
-    // e.preventDefault()
-    let {name,companyName,email,message}=formData
+    try{
+      const formResponse = await fetch('https://formspree.io/f/xeqyabvd', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    });
 
-    // console.log(formData)
-    // alert(`Press "Ok" to confirm`)
-    let result=await fetch('https://backendwork-nfm7.onrender.com/api/portfolio/contact',{
-      method:'post',
-      body:JSON.stringify({name,companyName,email,message}),
-      headers:{
-        'Content-Type':'application/json',
 
-      }
-    })
-    result=await result.json
-    localStorage.setItem('user',JSON.stringify(result))
+      let {name,companyName,email,message}=formData
+      let result=await fetch('https://backendwork-nfm7.onrender.com/api/portfolio/contact',{
+        method:'post',
+        body:JSON.stringify({name,companyName,email,message}),
+        headers:{
+          'Content-Type':'application/json',
+  
+        }
+      })
+      result=await result.json
+      localStorage.setItem('user',JSON.stringify(result))
+    }
+    catch(err){
+      alert('error occurr')
+    }
+   
+    
+
+   
+   
 
 
 
@@ -51,7 +66,7 @@ function Contact() {
       <h6 className='g1'>Get In Touch</h6>
       <h3 className='g2'>Contact Me</h3>
       <p className='g3'></p>
-      <form action="https://formspree.io/f/xeqyabvd" onSubmit={submit} data-aos="fade-up" method='POST' >
+      <form onSubmit={submit} data-aos="fade-up" >
        
         <input type="text" name="name" id="g4" placeholder=' Your Name'  value={formData.name}
           onChange={handleChange} required/>
