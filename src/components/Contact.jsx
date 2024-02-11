@@ -3,7 +3,7 @@ import './contact.css'
 import { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-const register='https://backendwork-nfm7.onrender.com'
+const register='https://backendsucess.onrender.com'
 
 function Contact() {
   useEffect(()=>{
