@@ -1,0 +1,186 @@
+.g{
+    /* border: 2px solid red; */
+    height: 700px;
+    width: 100%;
+    position: relative;
+    top: 31em;
+    background-color: black;
+}
+.g1{
+    position: relative;
+    top: 60px;
+    left:170px;
+    color: rgb(232, 80, 80);
+    width: 30%;
+
+}
+.g2{
+    color: white;
+    position: relative;
+    top: 60px;
+    left:170px;
+    width: 30%;
+    
+}
+.g3{
+    background-color: rgb(232, 80, 80) ;
+    height: 2px;
+    width: 5%;
+    position: relative;
+    top: 60px;
+    left:176px;
+
+}
+#g4{
+    position: relative;
+    top: 100px;
+    left:396px;
+    width: 30%;
+    height: 30px;
+
+}
+
+.g4{
+    color: goldenrod;
+    position: relative;
+    top: 69px;
+    left:19px;
+    font-size: smaller;
+}
+#g5{
+    position: relative;
+    top: 100px;
+    left:396px;
+    /* width: 30%; */
+    /* height: 12px; */
+}
+.nn{
+    top: -56px;
+}
+.g6{
+    position: relative;
+    top: 89px;
+    left:397px;
+    background-color: black;
+    color: goldenrod;
+    height: 40px;
+    width: 10%;
+    border-bottom: 2px solid goldenrod;
+}
+.g6:hover{
+    animation: contact 3s ease infinite;
+}
+@keyframes contact {
+    from{
+        background-color: black;
+        color: goldenrod;
+    }
+    to{
+        background-color: goldenrod;
+        color: black;
+
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:375px) and (max-width:426px){
+    .g{
+        top: 120em;
+    }
+    .g6{
+        left: 30px;
+        width: 20%;
+    }
+    .g1{
+        left: 160px;
+    }
+    .g2{
+        left: 160px;
+        width: 30%;
+    }
+    .g3{
+        left: 168px;
+        width: 8%;
+    }
+    #g4{
+        left: 30px;
+        width: 80%;
+    }
+    .g4{
+        left: -300px;
+
+    }
+    #g5{
+        left: 30px;
+        width: 80%;
+    }
+}
+@media screen and (min-width:601px) and (max-width:800px){
+    .g{
+        top: 38em;
+    }
+    #g4{
+        left: 170px;
+        width: 50%;
+    }
+    .g6{
+        left: 170px;
+        width: 15%;
+    }
+    .g4{
+        left: -200px;
+
+    }
+    #g5{
+        left: 170px;
+        width: 50%;
+    }
+}
+@media screen and (min-width:803px) and (max-width:1025px){
+    .g4{
+        left: 100px;
+    }
+    .nn{
+        left: 37px;
+    }
+}
+@media screen and (min-width:1300px) and (max-width:1441px){
+    .g4{
+        left: -40px;
+
+}
+
+#g5{
+    /* left: 170px; */
+    width: 30%;
+}
+}
+@media screen and (min-width:1500px){
+    #g5{
+        width: 30%;
+    }
+    .g4{
+        left: -70px;
+
+}
+}

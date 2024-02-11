@@ -1,0 +1,172 @@
+.f{
+    /* border: 2px solid red; */
+    height: 476px;
+    width: 100%;
+    position: absolute;
+    top: 80.3em;
+}
+.slide{
+    height: 300px;
+    position: relative;
+    top: 100px;
+}
+.card{
+    width: 50%;
+    position: relative;
+    top: 30px;
+    left: 300px;
+    /* background-color:rgb(134, 98, 8); */
+    background-color: rgb(0, 0, 0);
+    color: goldenrod;
+    /* height: 300px; */
+}
+.f1{
+    position: relative;
+    top: 80px;
+    left: 160px;
+    color: rgb(232, 80, 80);
+}
+.f2{
+    position: relative;
+    top: 80px;
+    left: 160px;
+    color: white;
+    width: 30%;
+}
+.f3{
+    background-color: rgb(232, 80, 80);
+    width: 4%;
+    position: relative;
+    top: 80px;
+    left: 164px;
+    height: 2px;
+}
+.card-title{
+    width: 50%;
+}
+.card-text{
+    margin-top: 26px;
+}
+.f4{
+    /* background-color:black ; */
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    position: relative;
+    top: 30px;
+    
+    
+    height: 30px;
+    color: rgb(12, 196, 64);
+    text-align: center;
+    padding: 3px;
+    /* font-style:italic; */
+}
+.cc{
+    left: 100px;
+}
+.cc1{
+    top: 54px;
+    left: 55px;
+}
+.f4:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:375px) and (max-width:426px){
+    .f{
+        height: 600px;
+        top: 175em;
+    }
+    .f1{
+        width: 30%;
+    }
+    .f2{
+        width: 40%;
+    }
+    .card{
+        left: 100px;
+        height: 270px;
+    }
+    .card-title{
+        width: 100%;
+        top: 0px;
+    }
+    .card-text{
+       display: none;
+        /* margin-top: 26px; */
+    }
+    .f4{
+        top: 20px;
+    }
+    .cc{
+        top: -2px;
+    }
+    .f3{
+        width: 8%;
+    }
+
+}
+@media screen and (min-width:601px) and (max-width:800px){
+    .f{
+        height: 600px;
+        top: 141.5em;
+    }
+    .f1{
+        width: 30%;
+    }
+    .f2{
+        width: 30%;
+    }
+    .card{
+        left: 120px;
+        height: 270px;
+        width: 70%;
+    }
+    .card-title{
+        width: 100%;
+    }
+}
+@media screen and (min-width:1300px) and (max-width:1441px){
+    .f2{
+        width: 30%;
+    }
+    .f4{
+        top: 20px;
+    }
+    .cc{
+        top: -4px;
+    }
+}
+@media screen and (min-width:1592px){
+    .f2{
+        width: 30%;
+    }
+    .f4{
+        top: 20px;
+    }
+    .cc{
+        top: -4px;
+    }
+}
