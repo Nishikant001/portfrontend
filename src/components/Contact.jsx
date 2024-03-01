@@ -57,7 +57,7 @@ function Contact() {
   }
 
     return (
-    <div className='g'>
+    <div className='g' id='contact'>
       <h6 className='g1'>Get In Touch</h6>
       <h3 className='g2'>Contact Me</h3>
       <p className='g3'></p>

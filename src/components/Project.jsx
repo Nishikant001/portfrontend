@@ -4,6 +4,8 @@ import meme from "./Images/meme.png";
 import Love from "./Images/love.png";
 import gym from "./Images/gym.png";
 import Story from "./Images/story.png";
+import web from "./Images/web.png";
+import port from "./Images/port.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -85,6 +87,79 @@ function Project() {
             <div class="card mb-3">
               <div class="row g-0">
                 <div class="col-md-4">
+                  <img src={web} class="img-fluid rounded-start" alt="..." />
+                  <a
+                    href="https://webmasters-nine.vercel.app/"
+                    target="_blank"
+                    className="f4 cc1"
+                  >
+                    View
+                  </a>
+                  <br />
+                  <a
+                    href="https://github.com/Nishikant001/webmasterFrontend"
+                    className="f4 cc"
+                  >
+                    | Resource
+                  </a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">WebMasters E-learning</h5>
+                    <p class="card-text">
+                    Crafted dynamic websites using MERN stack for Webmasters E-Learning Institute, empowering seamless online education experiences with innovative solutions.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary">
+                        Last updated 3 mins ago
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src={port} class="img-fluid rounded-start" alt="..." />
+                  <a
+                    href="#about"
+                    target="_blank"
+                    className="f4 cc1"
+                  >
+                    View
+                  </a>
+                  <br />
+                  <a
+                    href="https://github.com/Nishikant001/portfrontend"
+                    className="f4 cc"
+                  >
+                    | Resource
+                  </a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">My Personal Portfolio</h5>
+                    <p class="card-text">
+                    Engineered a sleek personal portfolio leveraging MERN stack, showcasing skills and projects with interactive design and seamless functionality.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary">
+                        Last updated 3 mins ago
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
                   <img src={meme} class="img-fluid rounded-start" alt="..." />
                   <a
                     href="https://659d22b7c836b2930652fbb3--nimble-kashata-9b6d65.netlify.app/"
@@ -118,77 +193,8 @@ function Project() {
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="card mb-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src={Love} class="img-fluid rounded-start" alt="..." />
-                  <a
-                    href="https://nishikant001.github.io/Love-Calculator/"
-                    target="_blank"
-                    className="f4 cc1"
-                  >
-                    View
-                  </a>
-                  <br />
-                  <a href="https://github.com/dashboard" className="f4 cc">
-                    | Resource
-                  </a>
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Love Predictor</h5>
-                    <p class="card-text">
-                      The Love Percentage Predictor is an interactive web
-                      application designed to provide users with a fun and
-                      engaging way to predict the perceived level of affection
-                      between two individuals
-                    </p>
-                    <p class="card-text">
-                      <small class="text-body-secondary">
-                        Last updated 3 mins ago
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card mb-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src={Story} class="img-fluid rounded-start" alt="..." />
-                  <a
-                    href="https://nishikant001.github.io/ParallaX-StoryBook/"
-                    target="_blank"
-                    className="f4 cc1"
-                  >
-                    View
-                  </a>
-                  <br />
-                  <a href="https://github.com/dashboard" className="f4 cc">
-                    | Resource
-                  </a>
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Parallax Story Book</h5>
-                    <p class="card-text">
-                      The Parallax Story Book is a captivating web-based
-                      storytelling experience that employs parallax scrolling
-                      effects to animate and bring narratives to life.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-body-secondary">
-                        Last updated 3 mins ago
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
+          
         </div>
         <button
           class="carousel-control-prev"
